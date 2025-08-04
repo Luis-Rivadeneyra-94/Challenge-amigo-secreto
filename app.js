@@ -1,12 +1,12 @@
 // Creación de array
-Let amigo = [];
+let amigo = [];
 function agregarAmigo(){
-    const nombreIngresado=document.getElementById("amigo").value
+    const nombreIngresado = document.getElementById("amigo").value
     if(nombreIngresado==""){
-        alert("Por favor, inserte un nombre.);
+        alert("Por favor, inserte un nombre");
     }
     else{
     amigo.push(nombreIngresado);
-    document.getElementById("amigo").value="";    
+    document.getElementById("amigo").value="";
     }
 }
