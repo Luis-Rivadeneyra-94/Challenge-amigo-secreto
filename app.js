@@ -19,3 +19,12 @@ function actualizarListaAmigos(){
         document.getElementById("listaAmigos").appendChild(nuevoAmigo);
     }
 }
+function sortearAmigo(){
+    if (amigo.length==0){
+        alert("La lista de amigos esta vacia");
+    }
+    else{
+        indiceSorteo=parseInt(Math.floor(Math.random()*amigo.length));
+        document.getElementById("resultado").innerHTML= amigo[indiceSorteo];
+    }
+}
