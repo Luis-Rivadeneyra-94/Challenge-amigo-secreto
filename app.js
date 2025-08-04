@@ -8,5 +8,14 @@ function agregarAmigo(){
     else{
     amigo.push(nombreIngresado);
     document.getElementById("amigo").value="";
+    actualizarListaAmigos();
+    }
+}
+function actualizarListaAmigos(){
+    document.getElementById("listaAmigos").innerHTML = "";
+    for(let i=0;i<amigo.length;i++){
+        let nuevoAmigo = document.createElement("li");
+        nuevoAmigo.textContent = amigo[i];
+        document.getElementById("listaAmigos").appendChild(nuevoAmigo);
     }
 }
